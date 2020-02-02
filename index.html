@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baby Yoda Creator</title>
+    <link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Background choose main start-->
+    <main class="background-choose js-background-choose background-choose--display">
+        <div class="background-choose__container">
+            <h1 class="background-choose__title">Baby Yoda creator</h1>
+            <img src="assets/images/baby1.png" alt="Image of Baby yoda" class="background-choose__illustation">
+            <label for="background-choose__background-input" class="background-choose__input-label">Select a background</label>
+            <input type="file" name="backgroundInput" id="background-choose__background-input" class="js-backgroundInput" accept="image/*,.pdf" alt=""/>
+            <img id="output"/>
+        </div>
+    </main><!-- Background choose main end-->
+    <!-- baby-yoda-creator start -->
+    <main class="baby-yoda-creator js-baby-yoda-creator">
+        <div class="creator-panel">
+            <h1 class="creator-panel__title">BABY YODA CREATOR</h1>
+            <!-- Item group clothes start -->
+            <div class="item-group">
+                <div class="item-group__header">
+                    <img src="assets/images/tshirt.png" alt="T-shirt Icon" class="item-group__header__icon">
+                    <h2 class="item-group__header__title">Clothes</h2>
+                    <div class="item-group__header__bar"></div>
+                </div>
+                <div class="item-group__item-list">
+                    <img src="assets/images/items/cowboy_hat.png" alt="cowboy hat" class="item-group__item-list__item">
+                    <img src="assets/images/items/beret.png" alt="beret" class="item-group__item-list__item">
+                    <img src="assets/images/items/sombrero.png" alt="sombrero hat" class="item-group__item-list__item">
+                    <img src="assets/images/items/mask.png" alt="mask" class="item-group__item-list__item">
+                    <img src="assets/images/items/moustache.png" alt="moustache" class="item-group__item-list__item">
+                    <img src="assets/images/items/moustache_2.png" alt="moustache" class="item-group__item-list__item">
+                    <img src="assets/images/items/chef_hat.png" alt="Chef hat" class="item-group__item-list__item">
+                </div>
+            </div><!-- Item group clothes end -->
+            <!-- Item group objects start -->
+            <div class="item-group">
+                <div class="item-group__header">
+                    <img src="assets/images/shop.png" alt="T-shirt Icon" class="item-group__header__icon">
+                    <h2 class="item-group__header__title">Items</h2>
+                    <div class="item-group__header__bar"></div>
+                </div>
+                <div class="item-group__item-list">
+                    <img src="assets/images/items/beer.png" alt="beer" class="item-group__item-list__item">
+                    <img src="assets/images/items/baguette.png" alt="baguette" class="item-group__item-list__item">
+                    <img src="assets/images/items/bulletproof_vest.png" alt="bulletproof vest" class="item-group__item-list__item">
+                    <img src="assets/images/items/cigarette.png" alt="cigarette" class="item-group__item-list__item">
+                </div>
+            </div><!-- Item group objects end -->
+            <!-- Item group objects start -->
+            <div class="item-group">
+                <div class="item-group__header">
+                    <img src="assets/images/landscape.png" alt="T-shirt Icon" class="item-group__header__icon">
+                    <h2 class="item-group__header__title">Landscape</h2>
+                    <div class="item-group__header__bar"></div>
+                </div>
+                <div class="item-group__item-list">
+                    <img src="assets/images/items/plane_1.png" alt="Plane boing" class="item-group__item-list__item">
+                    <img src="assets/images/items/sofa_1.png" alt="Sofa" class="item-group__item-list__item">
+                    <img src="assets/images/items/truck.png" alt="Truck" class="item-group__item-list__item">
+                    <img src="assets/images/items/deer.png" alt="deer" class="item-group__item-list__item">
+                    <img src="assets/images/items/eiffel_tower.png" alt="Eiffel tower" class="item-group__item-list__item">
+                </div>
+            </div><!-- Item group objects end -->
+            <!-- Reload button-->
+            <div class="creator-panel__button-reload js-button-reset">
+                <img src="assets/images/reload.png" alt="Button reload icon" class="creator-panel__button-reload__icon">
+                <div class="creator-panel__button-reload__text">Reload</div> 
+            </div>
+            <!-- Save button-->
+            <a class="creator-panel__button-save js-button-save">
+                <img src="assets/images/save.png" alt="Button save icon" class="creator-panel__button-save__icon">
+                <div class="creator-panel__button-save__text">Save</div>
+            </a>
+        </div>
+        <canvas class="baby-yoda-creator__canvas-viewer js-canvas">
+            Canvas is not supported on your device
+        </canvas>
+    </main>
+<script src="scripts/main.js"></script>
+</body>
+</html>
